@@ -1,0 +1,327 @@
+/* 
+Sintaxis de CSS
+===============
+
+<selector> {
+    <regla>
+    <propiedad : valor>
+    background:orange !important;
+    color: blue
+}
+
+1) Ejemplos de selector de etiqueta:
+
+header{
+    background: blue;
+}
+
+section{
+    font-family: 'Segoe UI', serif;
+}
+
+2) Ejemplo de selector descendente:
+
+body header div nav ol li a {
+    font-family: 'Roboto UI', serif;
+}
+
+
+3) Ejemplo de selector de clase: 
+
+.link{
+    color: red
+}
+
+4) Propiedades de las fuentes:
+
+line-height     -> Modificar el alto de linea
+font-size       -> Modificar el tamaño de la fuente
+font-weight     -> Modificar el tipo de fuente
+font-style      -> Modificar el estilo de la fuente
+letter-spacing  -> Modificar el espacio entre letras
+text-transform  -> Transformar la fuente (mayusculas, minusculas, etc)
+text-decoration -> Modificar la decoración de la fuente
+
+*/
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  font-size: 40px;
+  text-transform: capitalize;
+  color: white;
+  /*text-decoration: dashed;*/
+  margin: 0;
+}
+
+h1 strong {
+  color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.contact {
+  background-color: #056fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  /*border: 1px solid red;*/
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+.event {
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: whitesmoke;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event-list-title {
+  margin-left: 20px;
+}
+
+.event-url {
+  border: 1px solid #056fff;
+  padding: 5px 20px;
+  color: #056fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  /*flex-direction: column; */
+  justify-content: center; /* Alineamiento horizontal */
+  align-items: center; /* Alineamiento vertical */
+}
+
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: whitesmoke;
+}
+
+.form-email input {
+  border-color: gray;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  background: transparent;
+  border-color: white;
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.hero {
+  height: 300px;
+  background-color: #1b2127;
+  background-repeat: no-repeat;
+  /*background-position-x: right;
+  background-size: 500px 300px;
+  background-image: url(../images/hero.jpg);*/
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  height: inherit;
+}
+
+.portfolio {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.project {
+  /*border-top: 10px solid red;
+  border-right: 10px solid yellow;
+  border-width: 5px;
+  border-style: dotted;*/
+  border: 1px solid gray;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin: 10px 0;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-description {
+  font-size: 20px;
+}
+
+.project-imageContainer {
+  width: 500px;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 0 10px;
+  background-size: 50px 50px;
+}
+
+.social-link.facebook {
+  background-image: url("../images/facebook.svg");
+}
+
+.social-link.github {
+  background-image: url("../images/github.svg");
+}
+.social-link.instagram {
+  background-image: url("../images/instagram.svg");
+}
+.social-link.twitter {
+  background-image: url("../images/twitter.svg");
+}
