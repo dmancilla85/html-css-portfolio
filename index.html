@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leonidas Sebastian</title>
+    <title>David A. Mancilla</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
     <header class="header">
       <div class="container">
         <figure class="logo">
           <img
             src="images/logo.png"
-            alt="Logo de http://leonidasesteban.com"
+            alt="Logo de http://david.a.mancilla.com"
             height="50"
           />
         </figure>
@@ -38,17 +40,34 @@
         </nav>
       </div>
     </header>
+    <section class="vanta">
+      <div class="container">
+        <script>
+          VANTA.RINGS({
+            el: ".vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 120.0,
+            scale: 1.0,
+            scaleMobile: 1.0,
+          });
+        </script>
+      </div>
+    </section>
     <section class="hero">
       <div class="container">
         <h1>
-          Hola! Soy <strong>Leonidas Esteban</strong> <br />
-          Desarrollador <strong>Javascript</strong> con <br />
-          pasión por la <strong>enseñanza</strong>
+          Hola! Soy <strong>David A. Mancilla</strong> <br />
+          Desarrollador <strong>C#</strong>, <strong>SQL</strong> y
+          <strong>R</strong> con <br />
+          pasión por la <strong>investigación</strong> autodidacta.
         </h1>
         <img
           class="hero-image"
           src="images/hero.jpg"
-          width="500"
+          width="400"
           height="300"
           alt="imagen principal del sitio"
         />
@@ -209,25 +228,20 @@
         </form>
         <div class="social">
           <a
-            href="https://twitter.com/leonidasesteban"
-            class="social-link twitter"
-          ></a>
-          <a
-            href="https://facebook.com/leonidas.esteban"
+            href="https://www.facebook.com/david.mancilla.395454"
             class="social-link facebook"
           ></a>
           <a
-            href="https://github.com/leonidasesteban"
-            class="social-link twitter"
+            href="https://github.com/dmancilla85"
+            class="social-link github"
           ></a>
           <a
-            href="https://instagram.com/leonidasesteban"
+            href="https://instagram.com/david.a.m2"
             class="social-link instagram"
           ></a>
         </div>
       </div>
     </section>
-
     <footer class="footer">
       <div>
         <p>
@@ -237,8 +251,8 @@
       </div>
       <div>
         <p>
-          Designed with <\3 by
-          <a href="https://twitter.com/thespianartist">@thespianartist</a>
+          Designed with ❤ by
+          <a href="https://instagram.com/david.a.m2">@david.a.m2</a>
         </p>
       </div>
     </footer>

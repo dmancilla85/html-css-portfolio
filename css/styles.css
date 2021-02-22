@@ -47,6 +47,7 @@ text-decoration -> Modificar la decoración de la fuente
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
+  background: #47443a;
 }
 
 figure {
@@ -78,12 +79,12 @@ h1 strong {
 }
 
 h2 {
-  color: #026fff;
+  color: whitesmoke;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 ol,
@@ -100,16 +101,15 @@ ul {
 }
 
 .contact {
-  background-color: #056fff;
+  background-color: #6b4f4d;
   color: white;
-  height: 150px;
+  height: 180px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .container {
-  /*border: 1px solid red;*/
   width: 1000px;
   margin: 0 auto;
   display: inherit;
@@ -153,6 +153,7 @@ ul {
 
 .event-list-title {
   margin-left: 20px;
+  background: #47443a;
 }
 
 .event-url {
@@ -167,8 +168,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   /*flex-direction: column; */
-  justify-content: center; /* Alineamiento horizontal */
-  align-items: center; /* Alineamiento vertical */
+  justify-content: center;
+  /* Alineamiento horizontal */
+  align-items: center;
+  /* Alineamiento vertical */
 }
 
 .footer {
@@ -242,23 +245,15 @@ ul {
 }
 
 .hero {
-  height: 300px;
+  height: 310px;
   background-color: #1b2127;
   background-repeat: no-repeat;
-  /*background-position-x: right;
-  background-size: 500px 300px;
-  background-image: url(../images/hero.jpg);*/
   display: flex;
   justify-content: space-between;
 }
 
 .menu {
   height: inherit;
-}
-
-.portfolio {
-  background: #fafafa;
-  padding: 20px;
 }
 
 .project {
@@ -276,6 +271,7 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
+
 .project strong {
   font-family: "Fjalla One", sans-serif;
 }
@@ -319,9 +315,17 @@ ul {
 .social-link.github {
   background-image: url("../images/github.svg");
 }
+
 .social-link.instagram {
   background-image: url("../images/instagram.svg");
 }
+
 .social-link.twitter {
   background-image: url("../images/twitter.svg");
+}
+
+.vanta {
+  display: flex;
+  height: 400px;
+  justify-content: space-between;
 }
